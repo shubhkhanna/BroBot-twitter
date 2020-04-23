@@ -14,7 +14,7 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
-for tweet in tweepy.Cursor(api.search, q = ('@ciies2 OR @elonmusk OR @narendramodi OR @DituGoogle OR #ciiesdit OR @khannashubh_')).items():
+for tweet in tweepy.Cursor(api.search, q = ('@ciies2 OR @DituGoogle OR #ciiesdit OR @khannashubh_ OR #gscditu OR #gscdit')).items():
     try:
         print('\nTweet by: @' + tweet.user.screen_name)
 
